@@ -9,8 +9,7 @@ public class Area {
         String radius = input.nextLine();
         if(radius.matches("[a-zA-Z]+") || radius.matches("[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?]+")) {
             System.out.println("Invalid input");
-            //System.exit(0);
-            return;
+            System.exit(0);
         }
         double convertedRadius = Double.parseDouble(radius);
 
